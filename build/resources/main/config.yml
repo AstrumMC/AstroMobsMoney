@@ -1,0 +1,37 @@
+# Форматирование текста.
+# LEGACY - цвет через & и hex &#
+# LEGACY_ADVANCED - улучшенный аналог legacy с поддержкой &## формата hex
+# MINIMESSAGE - цвет через <цвет>
+# MINIMESSAGE был добавлен в новых версиях (1.17+)
+serializer: LEGACY
+
+drop:
+  name: ""
+  material: "STONE"
+
+money:
+  player: 0.1
+  monster:
+    default:
+      min: 100
+      max: 200
+    zombie:
+      min: 100
+      max: 200
+  animal:
+    default:
+      min: 50
+      max: 100
+    cow:
+      min: 50
+      max: 100
+
+boost-money:
+  king: 1.2
+
+
+messages:
+  action-bar-pickup-player: "%money %player"
+  action-bar-pickup-mob: "%money"
+  action-bar-pickup-mob-boost: "%money %boost"
+  death: "%player %money %x %y %z"
